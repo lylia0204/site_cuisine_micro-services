@@ -33,10 +33,7 @@ public class User{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank
-    @Size(min=3, max = 50)
-    private String name;
-
+    
     @NotBlank
     @Size(min=3, max = 50)
     private String username;
@@ -48,7 +45,7 @@ public class User{
     private String email;
 
     @NotBlank
-    @Size(min=6, max = 100)
+    @Size(min=5, max = 100)
     private String password;
 
     @ManyToMany(fetch = FetchType.LAZY)
@@ -59,8 +56,7 @@ public class User{
 
     public User() {}
 
-    public User(String name, String username, String email, String password) {
-        this.name = name;
+    public User( String username, String email, String password) {
         this.username = username;
         this.email = email;
         this.password = password;
@@ -80,14 +76,6 @@ public class User{
 
     public void setUsername(String username) {
         this.username = username;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getEmail() {
