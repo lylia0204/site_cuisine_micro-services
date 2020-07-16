@@ -12,28 +12,28 @@ import org.springframework.web.bind.annotation.RestController;
 import fr.isika.jwtauthentication.model.FavoriteRecipes;
 import fr.isika.jwtauthentication.repository.FavoriteRecipeRepository;
 
-@RestController
-@CrossOrigin(origins = "*") 
-@RequestMapping("/api/user/favoriterecipe")
-public class FavoriteRecipesController {
-	
-	@Autowired 
-	private FavoriteRecipeRepository favRecRepo ;
-	
-	@PostMapping("/ajouter")
-    void addFavoriteRecipe(@RequestBody FavoriteRecipes favRec) {
-		favRecRepo.save(favRec);
-    }
-	
-	@GetMapping(value = "/{Recipeid}")
-	public FavoriteRecipes getByidRecipe(@PathVariable("Recipeid") String recipeId) {
-	  return favRecRepo.findByrecipeId(recipeId);
-	}
-	
-	@GetMapping(value = "/exists/{Recipeid}")
-	public boolean isRecipeIdAlreadyHere(@PathVariable("Recipeid") String recipeId) {
-	  return favRecRepo.existsByrecipeId(recipeId);
-	}
+//@RestController
+//@CrossOrigin(origins = "*") 
+//@RequestMapping("/api/user/favoriterecipe")
+//public class FavoriteRecipesController {
+//	
+//	@Autowired 
+//	private FavoriteRecipeRepository favRecRepo ;
+//	
+//	@PostMapping("/ajouter")
+//    void addFavoriteRecipe(@RequestBody FavoriteRecipes favRec) {
+//		favRecRepo.save(favRec);
+//    }
+//	
+//	@GetMapping(value = "/{Recipeid}")
+//	public FavoriteRecipes getByidRecipe(@PathVariable("Recipeid") String recipeId) {
+//	  return favRecRepo.findByrecipeId(recipeId);
+//	}
+//	
+//	@GetMapping(value = "/exists/{Recipeid}")
+//	public boolean isRecipeIdAlreadyHere(@PathVariable("Recipeid") String recipeId) {
+//	  return favRecRepo.existsByrecipeId(recipeId);
+//	}
 	
 
-}
+//}
