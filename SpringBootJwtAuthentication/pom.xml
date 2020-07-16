@@ -7,7 +7,6 @@
 	<artifactId>SpringBootJwtAuthentication</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
-
 	<name>SpringBootJwtAuthentication</name>
 	<description>SpringBootJwtAuthentication</description>
 
