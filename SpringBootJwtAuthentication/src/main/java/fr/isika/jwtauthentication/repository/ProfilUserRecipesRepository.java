@@ -1,0 +1,11 @@
+package fr.isika.jwtauthentication.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import fr.isika.jwtauthentication.model.FavoriteRecipes;
+import fr.isika.jwtauthentication.model.ProfilUserRecipes;
+
+public interface ProfilUserRecipesRepository extends CrudRepository<ProfilUserRecipes, Long> {
+	
+
+}

@@ -1,0 +1,23 @@
+package fr.isika.jwtauthentication.repository;
+
+import java.util.Set;
+
+import org.springframework.data.repository.CrudRepository;
+
+import fr.isika.jwtauthentication.model.FavoriteRecipes;
+
+public interface FavoriteRecipeRepository extends CrudRepository<FavoriteRecipes, Long> {
+
+	
+	Set<FavoriteRecipes> findByrecipeId(String recipeId);
+
+	boolean existsByrecipeId(String recipeId);
+
+
+
+
+	
+
+	
+
+}
