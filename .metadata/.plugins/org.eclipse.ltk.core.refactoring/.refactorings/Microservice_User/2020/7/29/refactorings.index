@@ -1,0 +1,12 @@
+1594925800446	Delete element
+1594925806080	Delete element
+1594926381777	Rename package 'fr.isika.jwtauthentication'
+1594926411924	Rename package 'fr.isika.jwtauthentication.controller'
+1594926439617	Rename package 'fr.isika.jwtauthentication.security.services'
+1594926458454	Rename package 'fr.isika.jwtauthentication.security.jwt'
+1594926494387	Rename package 'fr.isika.jwtauthentication.security'
+1594926510878	Rename package 'fr.isika.jwtauthentication.repository'
+1594926524162	Rename package 'fr.isika.jwtauthentication.model'
+1594926541240	Rename package 'fr.isika.jwtauthentication.message.response'
+1594926556621	Rename package 'fr.isika.jwtauthentication.message.request'
+1594926619308	Rename package 'fr.isika.jwtauthentication'

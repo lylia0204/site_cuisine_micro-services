@@ -1,0 +1,4 @@
+#server.port= ${PORT}
+#spring.datasource.node_api_url = ${NODE_API_URL}
+server.port = 8087
+

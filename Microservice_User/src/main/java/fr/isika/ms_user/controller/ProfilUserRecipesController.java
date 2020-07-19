@@ -4,6 +4,7 @@ import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -74,7 +75,7 @@ public class ProfilUserRecipesController {
 		
     }
 	
-	@GetMapping(value = "/favoriterecipe/findall/{username}")
+	@GetMapping(value = "/findall/{username}")
 	public Set<FavoriteRecipes> getAllFavoriteRecipes(@PathVariable("username") String username) {
 		User user = userRepos.findByUsername(username);
 		
@@ -84,6 +85,14 @@ public class ProfilUserRecipesController {
 		return recipes;
 	}
 	
+	@DeleteMapping("/delete/{username}/{recipeId}")
+    void deleterecipe(@PathVariable("username") String username, @PathVariable("recipeId") String recipeId) {
+	User user = userRepos.findByUsername(username);
+	FavoriteRecipes favrec = favRepo.findByrecipeId(recipeId);	
+	user.getProfilUserRecipes().getFavoriteRecipes().remove(favrec);
+	PurRepo.save(user.getProfilUserRecipes());
+		
+    }
 
 
 }

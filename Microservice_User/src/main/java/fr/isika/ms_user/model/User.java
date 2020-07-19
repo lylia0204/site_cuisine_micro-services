@@ -20,6 +20,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.NaturalId;
+import org.hibernate.validator.constraints.UniqueElements;
 
 @Entity
 @Table(name = "users", uniqueConstraints = {
@@ -50,6 +51,8 @@ public class User{
     @Size(min=5, max = 100)
     private String password;
     
+
+    
     @OneToOne (cascade = CascadeType.ALL)
     @JoinColumn(name = "profilUserRecipesId")
     ProfilUserRecipes profilUserRecipes = new ProfilUserRecipes();;
@@ -68,15 +71,20 @@ public class User{
     	inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles = new HashSet<>();
 
-    public User() {}
+   
 
     public User( String username, String email, String password) {
         this.username = username;
         this.email = email;
         this.password = password;
+        
     }
 
-    public Long getId() {
+    public User() {
+		
+	}
+
+	public Long getId() {
         return id;
     }
 
