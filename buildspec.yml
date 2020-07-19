@@ -18,7 +18,11 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
+<<<<<<< HEAD
     - 'target/SpringBootJwtAuthenticationAWS-0.0.1.jar'
+=======
+    - 'target/ms_user-0.0.1.jar'
+>>>>>>> f855fe7cd9c989b99b494e966377e7828c84e061
     - 'appspec.yml' 
     - 'scripts/before_install.sh' 
     - 'scripts/after_install.sh' 

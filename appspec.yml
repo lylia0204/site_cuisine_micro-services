@@ -1,7 +1,11 @@
 version: 0.0
 os: linux
 files:
+<<<<<<< HEAD
   - source: target/SpringBootJwtAuthenticationAWS-0.0.1.jar
+=======
+  - source: target/ms_user-0.0.1.jar
+>>>>>>> f855fe7cd9c989b99b494e966377e7828c84e061
     destination: /opt/ms-user
   - source: scripts/ms-user
     destination: /opt/ms-user

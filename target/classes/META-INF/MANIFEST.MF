@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Microservice_User
+Implementation-Version: 0.0.1
+Built-By: Stagiaire
+Implementation-Vendor-Id: fr.isika.jwtauthentication
+Build-Jdk: 1.8.0_161
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/ms_user
+Created-By: Maven Integration for Eclipse
+
