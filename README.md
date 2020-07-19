@@ -14,12 +14,12 @@ https://github.com/lylia0204/site_cuisine-angular = partie Angular
 https://github.com/lylia0204/site_cuisine_scraper = partie alimentation de la base de donnée MongoDB (scrapping des sites).
 
 Les technologies utilisées pour le deployement sont:  
-AWS S3 pour le deployement des microservices  
+AWS EC2 pour le deployement des microservices  
 AWS RDS pour l'hebergement de la base de données MySql.  
-AWS  
+ 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-# site_cuisine_micro-services-recherche
+# site_cuisine_micro-services USER
 
 Environnement de developpement:
 
@@ -63,7 +63,7 @@ Executer l'application.
 
 Avec le jar:
 ```sh
-$ java -jar microservices_recherche-0.0.1-SNAPSHOT.jar
+$ java -jar ms_user-0.0.1.jar.jar
 ```
 Pour la base de données:
 créer la base de données, aprés eexecution de l'application  
