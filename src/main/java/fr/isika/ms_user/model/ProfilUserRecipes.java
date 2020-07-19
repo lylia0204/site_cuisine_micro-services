@@ -17,12 +17,11 @@ public class ProfilUserRecipes {
 	
 
 	@Id
-	 @GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
 	
-//	@OneToMany (mappedBy = "profilUserRecipes", fetch = FetchType.LAZY, cascade=CascadeType.ALL)
-//	private Set<FavoriteRecipes> favoriteRecipes = new HashSet<>();
+
 	
 	@ManyToMany(cascade=CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinTable(
@@ -39,7 +38,6 @@ public class ProfilUserRecipes {
 		this.id = id;
 	}
 
-	
 
 	public Set<FavoriteRecipes> getFavoriteRecipes() {
 		return favoriteRecipes;
@@ -57,7 +55,7 @@ public class ProfilUserRecipes {
 
 	public ProfilUserRecipes() {
 		
-		// TODO Auto-generated constructor stub
+
 	}
 	
 

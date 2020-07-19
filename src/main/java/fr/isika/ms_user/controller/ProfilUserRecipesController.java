@@ -62,7 +62,6 @@ public class ProfilUserRecipesController {
 	User user = userRepos.findByUsername(username);
 	boolean recipeExistsOrNot = favRepo.existsByrecipeId(recipeId);
 	FavoriteRecipes favrec = new FavoriteRecipes();
-	
 	if(recipeExistsOrNot) {
 		favrec = favRepo.findByrecipeId(recipeId);	
 	} else {

@@ -23,9 +23,7 @@ public class FavoriteRecipes {
 
 	private String recipeId;
 	
-//	@ManyToOne(fetch = FetchType.LAZY, cascade=CascadeType.ALL)
-//    @JoinColumn(name = "ProfilUserRecipeId")
-//	ProfilUserRecipes profilUserRecipes = new ProfilUserRecipes();
+
 	@ManyToMany(mappedBy = "favoriteRecipes",fetch = FetchType.EAGER)
 	@JsonIgnore
     Set<ProfilUserRecipes> profilUserRecipes;
@@ -41,7 +39,6 @@ public class FavoriteRecipes {
 	}
 
 	
-
 	public Set<ProfilUserRecipes> getProfilUserRecipes() {
 		return profilUserRecipes;
 	}
@@ -52,7 +49,7 @@ public class FavoriteRecipes {
 
 	public FavoriteRecipes() {
 		
-		// TODO Auto-generated constructor stub
+	
 	}
 
 	public FavoriteRecipes( String recipeId) {
