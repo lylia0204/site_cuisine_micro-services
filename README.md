@@ -16,7 +16,7 @@ https://github.com/lylia0204/site_cuisine_scraper = partie alimentation de la ba
 Les technologies utilisées pour le deployement sont:   
 AWS EC2 pour le deployement des microservices  
 AWS RDS pour l'hebergement de la base de données MySql.  
-AWS ElasticBeans pour la partie nodeJS.
+AWS ElasticBeans pour la partie nodeJS.  
 AWS S3 pour la partie Angular.
  
 
