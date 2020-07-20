@@ -39,7 +39,7 @@ IDE **Eclipse** est trés bien pour cette partie.
 Créer un dossier: (Git bash here)
 ```sh
 $ git https://github.com/lylia0204/site_cuisine_micro-services.git
-$ site_cuisine_micro-services
+$ cd site_cuisine_micro-services
 ```
 Importer le dossier dans votre IDE : 
 
