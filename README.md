@@ -13,13 +13,15 @@ https://github.com/lylia0204/site_cuisine_micro-services-recherche  = microservi
 https://github.com/lylia0204/site_cuisine-angular = partie Angular  
 https://github.com/lylia0204/site_cuisine_scraper = partie alimentation de la base de donnée MongoDB (scrapping des sites).
 
-Les technologies utilisées pour le deployement sont:  
-AWS S3 pour le deployement des microservices  
+Les technologies utilisées pour le deployement sont:   
+AWS EC2 pour le deployement des microservices  
 AWS RDS pour l'hebergement de la base de données MySql.  
-AWS  
+AWS ElasticBeans pour la partie nodeJS.  
+AWS S3 pour la partie Angular.
+ 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-# site_cuisine_micro-services-recherche
+# site_cuisine_micro-services USER
 
 Environnement de developpement:
 
@@ -37,7 +39,7 @@ IDE **Eclipse** est trés bien pour cette partie.
 Créer un dossier: (Git bash here)
 ```sh
 $ git https://github.com/lylia0204/site_cuisine_micro-services.git
-$ site_cuisine_micro-services
+$ cd site_cuisine_micro-services
 ```
 Importer le dossier dans votre IDE : 
 
@@ -63,7 +65,7 @@ Executer l'application.
 
 Avec le jar:
 ```sh
-$ java -jar microservices_recherche-0.0.1-SNAPSHOT.jar
+$ java -jar ms_user-0.0.1.jar.jar
 ```
 Pour la base de données:
 créer la base de données, aprés eexecution de l'application  
